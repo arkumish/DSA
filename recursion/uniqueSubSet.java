@@ -1,5 +1,6 @@
 class Solution {
     /*
+    78. Subsets
     print all subset, take, not take method, call 
 
     base condition : if(index==n)  add array to final array ; return ;
@@ -23,7 +24,7 @@ class Solution {
         //not take
         currArr.remove(currArr.size()-1);
         fxn(ind+1,nums, finalArray, currArr);
-        
+
     }
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> finalArray = new ArrayList<>();
